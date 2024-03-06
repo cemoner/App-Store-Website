@@ -1,0 +1,17 @@
+@use "./variables" as v;
+
+@mixin media-max($key) {
+    $value: map-get(v.$breakpoints, $key);
+  
+    @media screen and (max-width:$value) {
+      @content;
+    }
+  }
+
+  @mixin media-min($key) {
+    $value: map-get(v.$breakpoints, $key);
+  
+    @media screen and (min-width:$key) {
+      @content;
+    }
+  }

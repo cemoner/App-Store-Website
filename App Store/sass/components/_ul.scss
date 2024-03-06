@@ -1,0 +1,6 @@
+@use "../abstracts/" as a;
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+}

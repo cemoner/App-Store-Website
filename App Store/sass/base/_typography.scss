@@ -1,0 +1,21 @@
+@use "../abstracts" as a;
+
+html {
+  font-size: 62.5%;
+  font-family: "Spartan", sans-serif;
+  @include a.media-max(large) {
+    font-size: 55%;
+  }
+  @include a.media-max(medium) {
+    font-size: 50%;
+  }
+  @include a.media-max(small) {
+    font-size: 45%;
+  }
+  @include a.media-max(very-small) {
+    font-size: 40%;
+  }
+  @include a.media-max(tiny) {
+    font-size: 20%;
+  }
+}

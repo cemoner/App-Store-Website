@@ -1,0 +1,9 @@
+@use "../abstracts/" as a;
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color:var(--clr-primary-black);
+}

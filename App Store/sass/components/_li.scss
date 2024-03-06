@@ -1,0 +1,22 @@
+@use "../abstracts/" as a;
+
+.nav-item {
+    font-size:1.75em;
+    padding:0 1.5em;
+    height: 100%;
+}
+
+li::after {
+    content: "";
+    background-color: var(--clr-primary-black);
+    height: 0.2rem;
+    display: block;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+li:hover::after {
+    transform: scale(1);
+    transform-origin: right
+}

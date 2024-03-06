@@ -1,0 +1,19 @@
+@use "../abstracts/" as a;
+
+
+input {
+    font-size:1.5em;
+    background-color: transparent;
+    padding:0.65em;
+    border-radius: 2.5em;
+    border:none;
+}
+
+.search-button {
+    border-radius: 2.5em;
+    background-color: rgba(218, 223, 230, 0.3);
+}
+
+.search-button:hover {
+    background-color: rgba(198, 203, 211, 0.75);
+}

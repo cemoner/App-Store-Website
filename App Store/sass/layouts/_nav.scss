@@ -1,0 +1,10 @@
+@use "../abstracts" as a;
+
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    padding:3em 0;
+    height: 100%;
+    
+}
