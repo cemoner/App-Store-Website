@@ -1,6 +1,24 @@
 @use "../abstracts/" as a;
 
 .logo {
-    width:4em;
+    width:5em;
     text-align: center;
+    cursor: pointer;
+}
+
+.svg-container {
+    max-width:100%;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+.hamburger-menu-icon {
+    display:none;
+   @include a.media-max(small){
+        display:block;
+        max-width: 100%;
+        width:4em;
+   }
 }

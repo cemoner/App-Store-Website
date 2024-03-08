@@ -2,16 +2,24 @@
 
 
 input {
-    font-size:1.5em;
+    font-size:1.75em;
     background-color: transparent;
     padding:0.65em;
     border-radius: 2.5em;
+    width:100%;
     border:none;
+    @include a.media-max(very-small) {
+            font-size:2em;
+        }
 }
 
 .search-button {
     border-radius: 2.5em;
     background-color: rgba(218, 223, 230, 0.3);
+    @include a.media-max(small) {
+        flex-basis:100%;
+        margin-top:3em;
+        }
 }
 
 .search-button:hover {

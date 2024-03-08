@@ -1,9 +1,9 @@
 $breakpoints: (
-  "tiny": 10em,
-  "very-small": 25em,
-  "small": 37.5em,
-  "medium": 56.25em,
-  "large": 78em,
+  "tiny":350px,
+  "very-small": 576px,
+  "small": 768px,
+  "medium": 992px,
+  "large": 1200px,
 );
 
 $color: red;

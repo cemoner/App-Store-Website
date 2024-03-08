@@ -1,1 +1,20 @@
 @use "../abstracts/" as a;
+
+body {
+    background-color:rgb(247, 243, 238);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container {
+    width:100%;
+    min-width:150px;
+    max-width: 2560px;
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+}

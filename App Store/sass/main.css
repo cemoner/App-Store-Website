@@ -1,3 +1,20 @@
+body {
+  background-color: rgb(247, 243, 238);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  min-width: 150px;
+  max-width: 2560px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -81,41 +98,38 @@ select {
   --fs-400: 0.75rem;
 }
 
+body {
+  font-family: "Play", serif;
+}
+
 html {
-  font-size: 62.5%;
-  font-family: "Spartan", sans-serif;
+  font-size: 70%;
 }
-@media screen and (max-width: 78em) {
+@media screen and (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 52.5%;
   }
 }
-@media screen and (max-width: 56.25em) {
+@media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
-  }
-}
-@media screen and (max-width: 37.5em) {
-  html {
-    font-size: 45%;
-  }
-}
-@media screen and (max-width: 25em) {
-  html {
-    font-size: 40%;
-  }
-}
-@media screen and (max-width: 10em) {
-  html {
-    font-size: 20%;
+    font-size: 52.5%;
   }
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 3em 0;
   height: 100%;
+  background-color: rgb(250, 241, 226);
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 3em 3em;
+    flex-wrap: wrap;
+  }
 }
 
 a:hover {
@@ -129,12 +143,40 @@ a {
 .navigation-list {
   list-style: none;
   display: flex;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .navigation-list {
+    background-color: rgb(248, 243, 228);
+    z-index: 2;
+    position: absolute;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 2em 0;
+    width: 0;
+    align-items: center;
+    justify-content: flex-start;
+    transform-origin: left;
+    opacity: 0;
+    transition: width 0.25s, opacity 0.25s;
+  }
+}
+
+.nav-opened {
+  width: 50%;
+  opacity: 1;
 }
 
 .nav-item {
-  font-size: 1.75em;
+  font-size: 2em;
   padding: 0 1.5em;
-  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .nav-item {
+    padding: 0.75em 0;
+  }
 }
 
 li::after {
@@ -153,21 +195,53 @@ li:hover::after {
 }
 
 .logo {
-  width: 4em;
+  width: 5em;
   text-align: center;
+  cursor: pointer;
+}
+
+.svg-container {
+  max-width: 100%;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.hamburger-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-menu-icon {
+    display: block;
+    max-width: 100%;
+    width: 4em;
+  }
 }
 
 input {
-  font-size: 1.5em;
+  font-size: 1.75em;
   background-color: transparent;
   padding: 0.65em;
   border-radius: 2.5em;
+  width: 100%;
   border: none;
+}
+@media screen and (max-width: 576px) {
+  input {
+    font-size: 2em;
+  }
 }
 
 .search-button {
   border-radius: 2.5em;
   background-color: rgba(218, 223, 230, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .search-button {
+    flex-basis: 100%;
+    margin-top: 3em;
+  }
 }
 
 .search-button:hover {
