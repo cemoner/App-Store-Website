@@ -7,9 +7,9 @@ body {
 }
 
 html {
-  font-size: 70%;
+  font-size: 60%;
   @include a.media-max(large) {
-    font-size: 52.5%;
+    font-size: 50%;
   }
   @include a.media-max(small) {
     font-size: 52.5%;

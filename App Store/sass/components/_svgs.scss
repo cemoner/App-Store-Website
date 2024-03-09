@@ -1,16 +1,19 @@
 @use "../abstracts/" as a;
 
+
+.svg-container {
+    max-width:100%;
+    width:4em;
+}
+
 .logo {
     width:5em;
     text-align: center;
     cursor: pointer;
 }
 
-.svg-container {
-    max-width:100%;
-}
 
-.logo:hover {
+.svg-container:hover {
     opacity: 0.5;
 }
 

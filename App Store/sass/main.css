@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(247, 243, 238);
+  background-color: rgb(250, 246, 241);
   display: flex;
   justify-content: center;
 }
@@ -103,11 +103,11 @@ body {
 }
 
 html {
-  font-size: 70%;
+  font-size: 60%;
 }
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 52.5%;
+    font-size: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -132,12 +132,29 @@ nav {
   }
 }
 
+footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 3em 0;
+  background-color: rgb(252, 232, 205);
+}
+
 a:hover {
   text-decoration: none;
 }
 
 a {
   color: var(--clr-primary-black);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  padding: 0.5em;
 }
 
 .navigation-list {
@@ -169,6 +186,12 @@ a {
   opacity: 1;
 }
 
+.footer-list {
+  list-style-type: none;
+  padding: 0em;
+  margin: 0;
+}
+
 .nav-item {
   font-size: 2em;
   padding: 0 1.5em;
@@ -179,7 +202,7 @@ a {
   }
 }
 
-li::after {
+.nav-item::after {
   content: "";
   background-color: var(--clr-primary-black);
   height: 0.2rem;
@@ -194,17 +217,24 @@ li:hover::after {
   transform-origin: right;
 }
 
+.footer-item {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0em;
+}
+
+.svg-container {
+  max-width: 100%;
+  width: 4em;
+}
+
 .logo {
   width: 5em;
   text-align: center;
   cursor: pointer;
 }
 
-.svg-container {
-  max-width: 100%;
-}
-
-.logo:hover {
+.svg-container:hover {
   opacity: 0.5;
 }
 
